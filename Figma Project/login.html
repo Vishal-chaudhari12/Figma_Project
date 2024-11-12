@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+*{
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.navbar {
+    background-color: #232F3E;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar .search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.navbar .search-bar input[type="text"] {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.navbar .search-bar button {
+    padding: 11.9px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+    
+}
+
+.navbar .search-bar button:hover {
+    background-color: #f3a847;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .cart .cart-count {
+    background-color: #f08804;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+}
+
+ /* -----------Body Css--------- */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.left-section img{
+    height: 400px;
+    width: 400px;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    max-width: 400px;
+    margin-right: 15%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-account {
+    padding: 10px;
+    background-color: #e33a3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.google-signup {
+    padding: 10px;
+    background-color: white;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-signup img {
+    width: 20px;
+    height: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <!-- <div class="logo">
+              <img src="" alt="Logo">
+            </div> -->
+            <div class="search-bar">
+              <input type="text" placeholder="Search By Product">
+              <button>Search</button>
+            </div>
+            <div class="nav-links">
+              <a href="#Home" target_main >Home</a>
+              <a href="#Home">Conctact</a>
+              <a href="#">About</a>
+              <a href="sign.html">Sign Up</a>
+              <a href="#">My Account</a>
+            </div>
+            <div class="cart">
+              <span>Cart</span>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+      
+    </header>
+<!-- ----Body----- -->
+<div class="container">
+    <div class="left-section">
+        <img src="login.png" alt="Illustration" class="illustration">
+    </div>
+    <div class="right-section">
+        <h2>Login</h2>
+        <p>Enter your details below</p>
+        <form>
+        
+            <input type="email" placeholder="Email or Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="create-account">Login</button>
+        
+        </form>
+    </div>
+</div>
+
+
+
+   
+
+</body>
+
+</html>
