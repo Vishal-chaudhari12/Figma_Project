@@ -133,9 +133,23 @@ body {
     margin-top: 5%;
     
 }
+.view-products-button1 {
+    background-color:  #e74c3c;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20%;
+}
+
+.view-products-button1:hover {
+    background-color:  #e74c3c;
+}
 
 .box{
-    height: 400px;
+    height: 450px;
     width: 23%;
     /* border: 2px solid black; */
     background-color: white;

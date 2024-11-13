@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create an Account</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+    
     <style>
 
 * {
@@ -14,6 +14,77 @@
     font-family: Arial, sans-serif;
 }
 /* ------Header---- */
+.navbar {
+    background-color: #232F3E;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar .search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.navbar .search-bar input[type="text"] {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.navbar .search-bar button {
+    padding: 10px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #f3a847;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .cart .cart-count {
+    background-color: #f08804;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+}
+
 
 
 body {
@@ -153,7 +224,7 @@ input[type="password"] {
                 <button type="button" class="google-signup">
                     <img src="google-icon.png" alt="Google Icon"> Sign up with Google
                 </button>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
             </form>
         </div>
     </div>
