@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            display: flex;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        .product-info {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .product-info h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+
+        .product-info .rating {
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        .discount {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .offers, .details {
+            margin: 20px 0;
+        }
+
+        .offers h3, .details h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .offer-item {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #e55d00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-gallery">
+        <img src="Wakad.jpeg" alt="Product Image">
+    </div>
+    <div class="product-info">
+        <h1>Waker</h1>
+        <div class="rating">4.3 ★ (6 Ratings & 0 Reviews)</div>
+        <div class="price">₹795 <span class="original-price">₹4,999</span> <span class="discount">84% off</span></div>
+        
+        <div class="offers">
+            <h3>Available offers</h3>
+            <div class="offer-item">Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card</div>
+            <div class="offer-item">Bank Offer Flat ₹1,200 off on HDFC Bank Credit Card EMI Txns on 6 and 9 months tenure, Min. Txn Value: ₹15,000</div>
+            <div class="offer-item">Bank Offer Flat ₹1,500 off on HDFC Bank Credit Card EMI Txns on 12 months tenure, Min. Txn Value: ₹15,000</div>
+            <div class="offer-item">Bank Offer 10% off up to ₹1750 on HDFC Bank Credit Card EMI Txns on 24 months tenure, Min. Txn Value: ₹15,000</div>
+        </div>
+
+        <div class="details">
+            <h3>Highlights</h3>
+            <ul>
+                <li>Strong And Durable</li>
+                <li>Enhanced Stability</li>
+                <li>Height Adjustment</li>
+            </ul>
+            <p><strong>Delivery by:</strong> 29 Nov, Friday | Free</p>
+            <p><strong>Warranty:</strong> 7 Day Replacement Warranty</p>
+        </div>
+        <div class="buttons">
+            <button class="btn">Add to Cart</button>
+            <a href="checkout.html"><button class="btn">Buy Now</button></a>
+        </div>
+
+       
+    </div>
+</div>
+
+</body>
+</html>
